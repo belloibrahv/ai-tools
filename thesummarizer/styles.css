@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.header-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.header-title {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-title-line-1 {
+  display: block;
+  font-weight: 400;
+}
+
+.header-title-line-2 {
+  font-weight: 900;
+}
+
+.text-input-area-section textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.text-input-area-section textarea:focus {
+  border-color: #3498db;
+}
+
+.controls {
+  text-align: center;
+}
+
+.button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin: 10px;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+.button-full-width {
+  width: 100%;
+  padding: 10px;
+}
+
+.summary-output-section textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.loading-section {
+  display: none;
+  text-align: center;
+}
+
+.loading-message {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.error-section {
+  display: none;
+  text-align: center;
+  color: #e74c3c;
+}
+
+.error-message {
+  margin-bottom: 10px;
+}
